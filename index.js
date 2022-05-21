@@ -1,20 +1,17 @@
 const textContainer = document.getElementById("text-container");
 const textInput = document.getElementById("text-input");
 
-let text = "";
-
-textInput.addEventListener("keyup", function (event) {
-  text = event.target.value;
+function bionic() {
+  text = textInput.value;
   text = text.trim();
   bionicReading(text);
   const bionicText = `<p class="text">${bionicReading(text)}</p>`;
   textContainer.innerHTML = bionicText;
-});
+}
 
 function bionicReading(text) {
   const wordArray = text.split(" ");
   const letterArr = wordArray.map((el) => el.split(""));
-
   const arr1 = letterArr.map((el) => {
     const length = el.length;
     const boldLen = Math.floor((length / 100) * 50);

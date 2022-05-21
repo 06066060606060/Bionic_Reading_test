@@ -15,6 +15,11 @@ p {
   margin: 0;
   padding: 0;
 }
+h1{
+  padding: 20px;
+  text-align: center;
+  color:white;
+}
 
 .bold-letters {
   font-weight: 600;
@@ -25,16 +30,23 @@ div#text-container {
   max-width: 600px;
   width: 90%;
   margin: 0 auto;
-  border: 1px solid #000000;
   line-height: 0.5em;
   padding: 1em;
   box-sizing: border-box;
+ 
+}
+.btn{
+  margin-top: 20px;
+  width: 100px;
+  padding: 6px;
+  border-radius: 8px;
 }
 
 p.text {
   line-height: 2.5em;
   background-color: white;
   padding: 20px;
+  border-radius: 10px;
 }
 
 #input-wrapper {
@@ -43,12 +55,15 @@ p.text {
   max-width: 600px;
   margin: 0 auto;
   margin-bottom: 1em;
-  padding-top: 20px;
+  border-radius: 10px;
 }
 
 textarea {
+  border-style: none;
+  outline: none;
   resize: none;
   margin: 0;
   padding: 1em;
+  border-radius: 10px;
 
 }
